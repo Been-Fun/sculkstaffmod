@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "A": "sculkstaffmod:sculk_bones",
+    "B": "sculkstaffmod:warden_tendril",
+    "C": "sculkstaffmod:warden_heart",
+    "D": "sculkstaffmod:trapped_souls"
+  },
+  "pattern": [
+    "BCB",
+    " D ",
+    " A "
+  ],
+  "result": {
+    "id": "sculkstaffmod:sculk_staff_item"
+  }
+}

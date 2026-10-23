@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": "minecraft:sculk_sensor",
+    "B": "minecraft:sculk",
+    "C": "minecraft:recovery_compass"
+  },
+  "pattern": [
+    "ABA",
+    "BCB",
+    "ABA"
+  ],
+  "result": {
+    "id": "sculkstaffmod:warden_tendril"
+  }
+}

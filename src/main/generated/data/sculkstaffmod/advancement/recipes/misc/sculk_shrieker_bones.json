@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_sculk_shrieker": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:sculk_shrieker"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipes": "sculkstaffmod:sculk_shrieker_bones"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_sculk_shrieker"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "sculkstaffmod:sculk_shrieker_bones"
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_sculk_catalyst_bones": {
+      "conditions": {
+        "items": [
+          {
+            "items": "sculkstaffmod:sculk_catalyst_bones"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_sculk_shrieker_bones": {
+      "conditions": {
+        "items": [
+          {
+            "items": "sculkstaffmod:sculk_shrieker_bones"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipes": "sculkstaffmod:sculk_bones"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_sculk_catalyst_bones",
+      "has_sculk_shrieker_bones"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "sculkstaffmod:sculk_bones"
+    ]
+  }
+}

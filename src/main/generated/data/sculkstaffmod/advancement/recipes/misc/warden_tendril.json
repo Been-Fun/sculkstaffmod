@@ -1,0 +1,54 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_recovery_compass": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:recovery_compass"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_sculk": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:sculk"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_sculk_sensor": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:sculk_sensor"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipes": "sculkstaffmod:warden_tendril"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_recovery_compass",
+      "has_sculk_sensor",
+      "has_sculk"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "sculkstaffmod:warden_tendril"
+    ]
+  }
+}

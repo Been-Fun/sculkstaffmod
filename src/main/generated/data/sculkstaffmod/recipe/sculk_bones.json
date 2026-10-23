@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "sculkstaffmod:sculk_shrieker_bones",
+    "sculkstaffmod:sculk_shrieker_bones",
+    "sculkstaffmod:sculk_shrieker_bones",
+    "sculkstaffmod:sculk_shrieker_bones",
+    "sculkstaffmod:sculk_catalyst_bones",
+    "sculkstaffmod:sculk_catalyst_bones",
+    "sculkstaffmod:sculk_catalyst_bones",
+    "sculkstaffmod:sculk_catalyst_bones"
+  ],
+  "result": {
+    "id": "sculkstaffmod:sculk_bones"
+  }
+}
