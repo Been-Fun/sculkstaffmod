@@ -8,6 +8,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.data.worldgen.BootstrapContext;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Recipe;
 
@@ -88,7 +89,21 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .unlockedBy(getHasName(ModItems.SCULK_BONES), has(ModItems.SCULK_BONES))
                         .unlockedBy(getHasName(ModItems.WARDEN_TENDRIL), has(ModItems.WARDEN_TENDRIL))
                         .unlockedBy(getHasName(ModItems.WARDEN_HEART), has(ModItems.WARDEN_HEART))
-                        .unlockedBy(getHasName(Items.NETHERITE_BLOCK), has(Items.NETHERITE_BLOCK))
+                        .unlockedBy(getHasName(ModItems.TRAPPED_SOULS), has(ModItems.TRAPPED_SOULS))
+                        .save(output);
+
+                shaped(RecipeCategory.TOOLS, ModItems.WIND_STAFF)
+                        .pattern("BAB")
+                        .pattern(" C ")
+                        .pattern(" D ")
+                        .define('A', ModItems.LIGHT_CORE)
+                        .define('B', Items.WIND_CHARGE)
+                        .define('C', Items.ELYTRA)
+                        .define('D', Items.OMINOUS_TRIAL_KEY)
+                        .unlockedBy(getHasName(ModItems.LIGHT_CORE), has(ModItems.LIGHT_CORE))
+                        .unlockedBy(getHasName(Items.WIND_CHARGE), has(Items.WIND_CHARGE))
+                        .unlockedBy(getHasName(Items.ELYTRA), has(Items.ELYTRA))
+                        .unlockedBy(getHasName(Items.OMINOUS_TRIAL_KEY), has(Items.OMINOUS_TRIAL_KEY))
                         .save(output);
 
             }

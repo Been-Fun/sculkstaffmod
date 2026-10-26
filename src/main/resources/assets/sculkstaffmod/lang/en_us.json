@@ -5,11 +5,12 @@
   "item.sculkstaffmod.warden_heart": "Warden Heart",
   "item.sculkstaffmod.warden_tendril": "Warden Tendril",
   "item.sculkstaffmod.trapped_souls": "Trapped Souls",
+  "item.sculkstaffmod.light_core": "Light Core",
 
   "item.sculkstaffmod.sculk_staff_item": "Sculk Staff",
+  "item.sculkstaffmod.wind_staff_item": "Wind Staff",
 
-  "block.sculkstaffmod.sculked_netherite_block": "Sculked Netherite Block",
 
-  "creativemodetab.sculkstaffmod.sculk_gear": "Sculk Staff Gear",
+  "creativemodetab.sculkstaffmod.sculk_staff_staffs": "Sculk Staff Staffs",
   "creativemodetab.sculkstaffmod.sculk_ingredients": "Sculk Staff Ingredients"
 }

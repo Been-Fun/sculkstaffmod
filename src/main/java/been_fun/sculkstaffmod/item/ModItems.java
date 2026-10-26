@@ -2,6 +2,7 @@ package been_fun.sculkstaffmod.item;
 
 import been_fun.sculkstaffmod.SculkStaff;
 import been_fun.sculkstaffmod.item.custom.SculkStaffItem;
+import been_fun.sculkstaffmod.item.custom.WindStaffItem;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -56,9 +57,15 @@ public class ModItems {
             new Item(properties.stacksTo(16)));
     public static final Item TRAPPED_SOULS = registerItem("trapped_souls", properties ->
             new Item(properties.stacksTo(16)));
+    public static final Item LIGHT_CORE = registerItem("light_core", properties ->
+            new Item(properties.stacksTo(8)));
 
     public static final Item SCULK_STAFF = registerItem("sculk_staff_item", properties ->
             new SculkStaffItem(properties.stacksTo(1).useCooldown(0.25f)));
+
+    public static final Item WIND_STAFF = registerItem("wind_staff_item", properties ->
+            new WindStaffItem(properties.stacksTo(1).useCooldown(5)));
+
 
 
     public static ResourceKey<Item> getRK(Item item) {

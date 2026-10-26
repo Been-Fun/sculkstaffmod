@@ -14,13 +14,14 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockModelGenerators blockModelGenerators) {
-
     }
+
 
     @Override
     public void generateItemModels(ItemModelGenerators itemModelGenerators) {
 
         itemModelGenerators.declareCustomModelItem(ModItems.SCULK_STAFF);
+        itemModelGenerators.declareCustomModelItem(ModItems.WIND_STAFF);
 
         itemModelGenerators.generateFlatItem(ModItems.SCULK_CATALYST_BONES, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.SCULK_SHRIEKER_BONES, ModelTemplates.FLAT_ITEM);
@@ -28,7 +29,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerators.generateFlatItem(ModItems.WARDEN_HEART, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.WARDEN_TENDRIL, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.TRAPPED_SOULS, ModelTemplates.FLAT_ITEM);
-
-
+        itemModelGenerators.declareCustomModelItem(ModItems.LIGHT_CORE);
     }
 }

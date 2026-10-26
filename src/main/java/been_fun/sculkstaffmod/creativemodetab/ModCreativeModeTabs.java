@@ -11,13 +11,14 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 
 public class ModCreativeModeTabs {
-    public static final CreativeModeTab SCULK_GEAR = Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB,
-            Identifier.fromNamespaceAndPath(SculkStaff.MOD_ID, "sculk_gear"),
+    public static final CreativeModeTab SCULK_STAFF_STAFFS = Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB,
+            Identifier.fromNamespaceAndPath(SculkStaff.MOD_ID, "sculk_staff_staffs"),
             FabricCreativeModeTab.builder()
                     .icon(() -> new ItemStack(ModItems.SCULK_STAFF))
-                    .title(Component.translatable("creativemodetab.sculkstaffmod.sculk_gear"))
+                    .title(Component.translatable("creativemodetab.sculkstaffmod.sculk_staff_staffs"))
                     .displayItems((parameters, output) -> {
                         output.accept(ModItems.SCULK_STAFF);
+                        output.accept(ModItems.WIND_STAFF);
                     }).build());
 
     public static final CreativeModeTab SCULK_INGREDIENTS = Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB,
@@ -32,6 +33,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.WARDEN_HEART);
                         output.accept(ModItems.WARDEN_TENDRIL);
                         output.accept(ModItems.TRAPPED_SOULS);
+                        output.accept(ModItems.LIGHT_CORE);
                     }).build());
 
     public static void registerModCreativeModeTabs() {

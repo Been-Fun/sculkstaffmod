@@ -48,5 +48,14 @@ public class ModLootTableModifiers {
 
             builder.pool(poolBuilder.build());
         }
+        if (key.identifier().equals(Identifier.withDefaultNamespace("chests/trial_chambers/reward_ominous_unique"))) {
+            LootPool.Builder poolBuilder = LootPool.lootPool()
+                    .setRolls(ContextIntProviders.exactly(1))
+                    .when(LootItemRandomChanceCondition.randomChance(0.075f))
+                    .add(LootItem.lootTableItem(ModItems.LIGHT_CORE))
+                    .apply(SetItemCountFunction.setCount(ContextIntProviders.exactly(1)).build());
+
+            builder.pool(poolBuilder.build());
+        }
     }
 }
