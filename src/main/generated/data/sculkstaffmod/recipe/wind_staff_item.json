@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "A": "sculkstaffmod:light_core",
+    "B": "minecraft:wind_charge",
+    "C": "minecraft:elytra",
+    "D": "minecraft:ominous_trial_key"
+  },
+  "pattern": [
+    "BAB",
+    " C ",
+    " D "
+  ],
+  "result": {
+    "id": "sculkstaffmod:wind_staff_item"
+  }
+}
